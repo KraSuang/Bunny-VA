@@ -4,7 +4,6 @@ import DevTool from './tools/DevTool.jsx'
 
 import Main from './context/Main.jsx'
 import Registration from './context/Registration.jsx'
-import User from './context/user/User.jsx'
 
 function App() {
 
@@ -15,7 +14,6 @@ function App() {
                     <Routes>
                         <Route path='/*' element={<Main />}/>
                         <Route path='/authentication/*' element={<Registration />} />
-                        <Route path='/username/*' element={<User />} />
                     </Routes>
                 </BrowserRouter>
                 <DevTool />
