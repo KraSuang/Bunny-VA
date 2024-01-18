@@ -24,6 +24,11 @@ export default {
                         hover: "#000000"
                     }
                 },
+                text:{
+                    DEFAULT: "#FFFFFF",
+                    hover1: "#006FD5",
+                    hover2: "#000000"
+                }
             },
             fontFamily: {
                 Roboto: ['Roboto Condensed', 'sans-serif']
