@@ -21,49 +21,49 @@ export default function Signup() {
                 <div className="flex w-full my-2">
                     <div className="block w-full mr-1">
                         <p className="text-base font-normal">First Name</p>
-                        <input type="text" placeholder="First Name" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                        <input type="text" placeholder="First Name" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg text-gray-800 bg-gray-100" />
                     </div>
                     <div className="block w-full ml-1">
                         <p className="text-base font-normal">Last Name</p>
-                        <input type="text" placeholder="Last Name" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                        <input type="text" placeholder="Last Name" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg text-gray-800 bg-gray-100" />
                     </div>
                 </div>
                 <div className="block w-full my-2">
                     <p className="text-base font-normal">Email Address</p>
-                    <input type="text" placeholder="Email Address" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                    <input type="text" placeholder="Email Address" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg text-gray-800 bg-gray-100" />
                 </div>
                 <div className="block w-full my-2">
                     <p className="text-base font-normal">Password</p>
-                    <input type="password" placeholder="Password" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                    <input type="password" placeholder="Password" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg text-gray-800 bg-gray-100" />
                 </div>
                 <div className="flex w-full my-2 justify-center items-center">
                     <p className="mx-2 text-lg">Network</p>
                     <div className="flex w-fit">
-                        <input type="checkbox" checked={isIVAO} onChange={handleIVAO} className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                        <input type="checkbox" checked={isIVAO} onChange={handleIVAO} className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-100" />
                         <p className="mx-2 text-lg">IVAO</p>
                     </div>
                     <div className="flex w-fit">
-                        <input type="checkbox" checked={isVATSIM} onChange={handleVATSIM} className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                        <input type="checkbox" checked={isVATSIM} onChange={handleVATSIM} className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-100" />
                         <p className="mx-2 text-lg">VATSIM</p>
                     </div>
                 </div>
                 <div className={`${isIVAO ? `block` : `hidden`} w-full my-2`}>
                     <p className="text-base font-normal">IVAO</p>
-                    <input type="text" placeholder="IVAO" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                    <input type="number" placeholder="IVAO" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg text-gray-800 bg-gray-100" />
                 </div>
                 <div className={`${isVATSIM ? `block` : `hidden`} w-full my-2`}>
                     <p className="text-base font-normal">VATSIM</p>
-                    <input type="text" placeholder="VATSIM" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg bg-gray-200" />
+                    <input type="number" placeholder="VATSIM" className="w-full my-1 pl-4 pr-2 py-2 rounded-lg text-gray-800 bg-gray-100" />
                 </div>
                 <div className="w-full my-4 py-2 px-4 rounded-lg bg-red-500 hidden animate-pulse">
                     <p className="text-base font-normal text-white">Email Address is already used.</p>
                 </div>
                 <div className="flex flex-col w-full h-fit justify-center items-center">
-                    <button className="px-10 py-2 bg-slate-700 rounded-md">
-                        <p className="text-xl text-white font-normal rounded-lg">Register</p>
+                    <button className="px-10 py-2 transition-all duration-200 bg-button group hover:bg-button-hover rounded-md scale-100 hover:scale-105">
+                        <p className="text-xl text-button-text group-hover:text-button-text-hover font-normal rounded-lg">Register</p>
                     </button>
                     <div className="flex w-full h-git justify-center items-center my-2">
-                        <a href='/authentication' className="text-sm font-semibold underline cursor-pointer">Cancel</a>
+                        <a href='/authentication' className="text-sm font-semibold transition-all duration-200 text-text hover:text-text-hover1 hover:scale-110 underline cursor-pointer">Cancel</a>
                     </div>
                 </div>
             </div>
