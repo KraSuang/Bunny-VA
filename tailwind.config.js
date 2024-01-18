@@ -6,6 +6,25 @@ export default {
     ],
     theme: {
         extend: {
+            colors: {
+                background: {
+                    DEFAULT : "#004C94"
+                },
+                content: {
+                    DEFAULT: "#0054A3"
+                },
+                navbar: {
+                    DEFAULT: "#0054A3"
+                },
+                button: {
+                    DEFAULT: "#006FD5",
+                    hover: "#FFFFFF",
+                    text: {
+                        DEFAULT: "#FFFFFF",
+                        hover: "#000000"
+                    }
+                },
+            },
             fontFamily: {
                 Roboto: ['Roboto Condensed', 'sans-serif']
             },
