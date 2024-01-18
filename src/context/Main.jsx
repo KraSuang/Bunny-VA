@@ -27,8 +27,8 @@ function Start() {
                         <p className="text-[80px]">Welcome to</p>
                         <p className="text-[80px]">BUNNY VA</p>
                         <p className="text-lg">Let's paint the virtual skies with us today! A great community, for everyone.</p>
-                        <button className="px-6 py-3 text-black bg-white text-lg mt-4 rounded-lg">
-                            Start Here
+                        <button className="block px-6 py-3 text-lg mt-4 rounded-lg transition-all duration-200 bg-button group hover:bg-button-hover scale-100 hover:scale-105">
+                            <p className="text-button-text group-hover:text-button-text-hover">Start Here</p>
                         </button>
                     </div>
                     <img src={Logo} />
@@ -74,7 +74,7 @@ export default function Main() {
                     </Routes>
                 </div>
 
-                <footer className="w-full h-fit bg-slate-800 flex flex-col justify-center items-center py-20">
+                <footer className="w-full h-fit bg-background flex flex-col justify-center items-center py-20">
                     <p className="text-lg text-white ">BUNNY Virtual Aviation is a non-profit organization. This website serve the hobby of flight simulation.</p>
                     <p className="text-2xl text-white mt-4 font-semibold">Copyright © 2023 BUNNY VA</p>
                 </footer>
